@@ -1,0 +1,16 @@
+.myHeader {
+  padding: 20px 30px;
+  border-bottom: 1px solid #42424250;
+  background: #82828260;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navMenu {
+  display: flex;
+}
+
+li {
+  margin: 0 40px;
+}
