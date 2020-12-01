@@ -2,7 +2,6 @@
 import React from 'react';
 import App2 from './App2';
 import './App.css';
-import { BRAND } from './utils/index.utils';
 
 export default class App extends React.Component {
 
@@ -36,7 +35,6 @@ export default class App extends React.Component {
           parentName={tempName}
           parentAge={tempAge}
         />
-        <div>{BRAND}</div>
         <input onChange={(e) => this.setState({ name: e.target.value })}
           placeholder='Name'
         />

@@ -1,39 +1,29 @@
-const checkAge = () => {
-  const { age, name } = this.state;
+const checkAge = (age) => {
   if(age > 18 && age < 30){
-    this.setState({
-      tempAge: age,
-    });
-    // this.state.tempAge = age;
+    return true
   }
-  this.setState({ tempName: name });
+  return false
 }
 
-const checkName = () => {
-  const { age, name } = this.state;
-  if(name.length > 5 && name < 10){
-    this.setState({
-      tempAge: age,
-    });
-    // this.state.tempAge = age;
+const checkName = (name) => {
+  if(name.length > 5 && name.length < 10){
+    return true
   }
-  this.setState({ tempName: name });
+  return false
 }
 
-const checkDOB = () => {}
-
-const BRAND = 'WebsiteName.in'
-
+// TYPE 1 starts here
 export {
   checkAge,
   checkName,
-  checkDOB,
-  BRAND,
 }
-
 // import {
 //   checkAge
 // } from './index.utils.js';
+// TYPE 1 end here
 
+
+// TYPE 2 starts here
 // export default checkAge;
 // import checkAge from './index.utils';
+// TYPE 2 end here
