@@ -2,12 +2,17 @@ import React from "react";
 
 import "./index.css";
 
-function MyBanner(){
+function MyBanner({
+  list = [1,2,3,4,5,6]
+}) {
   return (
-    <div className="banner">
-      My Banner Component
-      <button>Check</button>
-    </div>
+    <ol>
+      {
+        list.map(element => {
+          return <li>{element}</li>
+        })
+      }
+    </ol>
   )
 }
 
